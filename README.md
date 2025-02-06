@@ -35,7 +35,7 @@ Model je prvo klasično istreniran na
 **Yelp**, **Amazon** i **Sentiment140** MAML-a.
 
 ### Odlike skupova i parametara
-- Ovaj projekat raspolaže sa oko **5,3 miliona** instanci podataka.
+- Ovaj projekat raspolaže sa oko **5,8 miliona** instanci podataka.
 - **meta_lr**: Stopa učenja. Koristi se za ažuriranje modela tokom meta-treninga.
 - **inner_lr**: Stopa učenja za unutrašnju optimizaciju. Koristi se za treniranje modela unutar svake iteracije na svakom zadatku.
 - **num_support**: Broj instanci u *support* skupu za svaki zadatak. Ovaj skup se koristi za obučavanje modela na svakom zadatku.
@@ -43,11 +43,8 @@ Model je prvo klasično istreniran na
 - **inner_steps**: Broj koraka optimizacije unutar svakog zadatka. To određuje koliko puta će model učiti unutar svakog zadatka.
 - **batch_size**: Broj zadataka koji se obrađuju u jednom koraku treniranja.
 - **meta_epochs**: Broj epoha tokom meta-treninga. Ovo određuje koliko puta će ceo skup zadataka proći kroz obuku.
-- Za obuku MAML modela koriste se samo **5 primera po zadatku (support set)** i **5 primera za testiranje (query set)**.
-- Za treniranje ovog modela korišćeno je **800** instanci, odnosno **0.016%** podataka<br>
-*Broj instanci = (Broj zadataka) * (Broj instanci u support skupu + Broj instanci u query skupu)*
 
-## Fajlovi
+## Datoteke
 
 ### NLP
 Fajl **NLP** sadrži implementaciju modela baziranog na **DistilBERT** 
@@ -120,7 +117,7 @@ Van demonstracije, ova tehnika ima odličnu primenu u praksi.
     macro avg       0.80     0.74      0.76       498
     weighted avg    0.80     0.80      0.79       498
     ```
-#### Na uticaj skupa sentiment140 uticalo je postojanje neutralne klase što je malo poremetilo model na ovom skupu, ali i sa tim problem se model odlično poneo na kraju.
+#### Na uticaj skupa sentiment140 uticalo je postojanje neutralne klase što je malo poremetilo model na ovom skupu, ali i sa tim problemom se model odlično poneo na kraju.
 ## Instalacija biblioteke
 
 Za instalaciju potrebnih biblioteka, koristite sledeću komandu:
