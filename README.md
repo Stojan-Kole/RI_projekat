@@ -141,7 +141,7 @@ univerzalna tehnika. U malo iteracija može da da odlične rezultate i time
 uštedi mnogo vremena kao i resursa.
 
 ## Primer mog projekta u praksi
-![Example Image]![Screenshot 2025-02-06 144253.png](pictures/Screenshot%202025-02-06%20144253.png)()
+![Screenshot 2025-02-06 144253.png](pictures/Screenshot%202025-02-06%20144253.png)
 ![Screenshot 2025-02-06 144346.png](pictures/Screenshot%202025-02-06%20144346.png)
 ![Screenshot 2025-02-06 144410.png](pictures/Screenshot%202025-02-06%20144410.png)
 ![Screenshot 2025-02-06 144428.png](pictures/Screenshot%202025-02-06%20144428.png)
