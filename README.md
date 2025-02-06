@@ -13,13 +13,13 @@ MAML: **Yelp**, **Amazon** i **Sentiment140**.
 
 ## MAML (Model-Agnostičko Meta-Učenje)
 
-**MAML** (Model-Agnostic Meta-Learning) je tehnika meta-učenja koja omogućava modelima da nauče kako da se brzo prilagode na nove zadatke sa minimalnim brojem trening primera. Cilj MAML-a je da nauči modele koji mogu brzo da se prilagode novim zadacima koristeći samo nekoliko koraka treninga, čime se poboljšava efikasnost i ušteda resursa. MAML koristi dva ključna koraka:
+**MAML** (Model-Agnostic Meta-Learning) je tehnika meta-učenja koja omogućava modelima da nauče kako da se brzo prilagode na nove zadatke sa minimalnim brojem trening primera čime se poboljšava efikasnost i ušteda resursa. MAML koristi dva ključna koraka:
 
 1. **Unutrašnji korak (Inner loop)**: U ovom koraku, model se trenira na maloj količini podataka iz svakog zadatka. Model se prilagođava specifičnom zadatku tako što se ažuriraju njegovi parametri, ali samo za taj zadatak.
 
 2. **Spoljni korak (Outer loop)**: Nakon što se model prilagodi na pojedinačne zadatke, parametri modela se ažuriraju na osnovu performansi modela na različitim zadacima. Ovaj korak omogućava da model generalizuje i bude sposoban da se brzo prilagodi novim, sličnim zadacima.
 
-U ovom projektu, **MAML** je korišćen kako bi **DistilBERT** mogao brzo da se prilagodi različitim datasetovima (kao što su Amazon, Yelp i Sentiment140) sa samo nekoliko označenih primera, što omogućava efikasno učenje sa malim brojem trening podataka, a istovremeno omogućava modelu da postigne visoke performanse na novim zadacima.
+U ovom projektu, **MAML** je korišćen kako bi **DistilBERT** mogao brzo da se prilagodi različitim skupovima podataka (kao što su Amazon, Yelp i Sentiment140) sa samo nekoliko označenih primera, što omogućava efikasno učenje sa malim brojem trening podataka, a istovremeno omogućava modelu da postigne visoke performanse na novim zadacima.
 
 ## Skupovi podataka
 
@@ -31,7 +31,7 @@ Korišćeni podaci za analizu sentimenta su:
 - **Sentiment140**: Skup podataka sa twitera(današnji X)
 
 Model je prvo klasično istreniran na 
-**IMDB** datasetu, a zatim adaptiran za 
+**IMDB** skupu, a zatim adaptiran za 
 **Yelp**, **Amazon** i **Sentiment140** MAML-a.
 
 ### Odlike skupova i parametara
@@ -48,7 +48,7 @@ Model je prvo klasično istreniran na
 
 ### NLP
 Fajl **NLP** sadrži implementaciju modela baziranog na **DistilBERT** 
-koji je klasično istreniran za sentiment analizu na IMDB datasetu.
+koji je klasično istreniran za sentiment analizu na IMDB skupu podataka.
 **DistilBERT** je efikasna i brza verzija **BERT** modela, koja je optimizovana za brže izvođenje bez značajnog gubitka u tačnosti. 
 Ovaj fajl obuhvata učitavanje, treniranje i daje primere njegovog korišćenja.
 
@@ -56,7 +56,7 @@ Ovaj fajl obuhvata učitavanje, treniranje i daje primere njegovog korišćenja.
 Fajl **NLP_MAML** sadrži implementaciju tehnike **MAML** za brzo 
 prilagođavanje modela na različite zadatke. Ovaj fajl koristi
 prethodno istreniran **DistilBERT** model i primenjuje MAML kako 
-bi model bio sposoban da se brzo prilagodi na nove datasetove 
+bi model bio sposoban da se brzo prilagodi na nove domene 
 (kao što su Yelp, Amazon, i Sentiment140), koristeći samo 
 nekoliko primeraka za svaki zadatak.
 
@@ -138,7 +138,7 @@ univerzalna tehnika. U malo iteracija može da da odlične rezultate i time
 uštedi mnogo vremena kao i resursa.
 
 ## Primer mog projekta u praksi
-![Example Image]![Screenshot 2025-02-06 144253.png](pictures/Screenshot%202025-02-06%20144253.png)()
+![Screenshot 2025-02-06 144253.png](pictures/Screenshot%202025-02-06%20144253.png)
 ![Screenshot 2025-02-06 144346.png](pictures/Screenshot%202025-02-06%20144346.png)
 ![Screenshot 2025-02-06 144410.png](pictures/Screenshot%202025-02-06%20144410.png)
 ![Screenshot 2025-02-06 144428.png](pictures/Screenshot%202025-02-06%20144428.png)
