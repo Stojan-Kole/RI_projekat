@@ -118,6 +118,70 @@ Van demonstracije, ova tehnika ima odličnu primenu u praksi.
     weighted avg    0.80     0.80      0.79       498
     ```
 #### Na uticaj skupa sentiment140 uticalo je postojanje neutralne klase što je malo poremetilo model na ovom skupu, ali i sa tim problemom se model odlično poneo na kraju.
+
+
+
+1. The customer service was beyond my expectations!
+   ➝ Positive: 0.98, Negative: 0.02
+
+2. I waited an hour for my order, and it was still wrong.
+   ➝ Positive: 0.02, Negative: 0.98
+
+3. This new phone update is a complete disaster.
+   ➝ Positive: 0.00, Negative: 1.00
+
+4. I'm absolutely thrilled with my new laptop!
+   ➝ Positive: 0.99, Negative: 0.01
+
+5. The food was bland and overpriced, not coming back.
+   ➝ Positive: 0.00, Negative: 1.00
+
+6. Best vacation spot ever, can't wait to return!
+   ➝ Positive: 0.99, Negative: 0.01
+
+7. The product broke after just two uses, very disappointed.
+   ➝ Positive: 0.00, Negative: 1.00
+
+8. Excellent book, well-written and engaging.
+   ➝ Positive: 1.00, Negative: 0.00
+
+9. Movie was predictable and boring, nothing special.
+   ➝ Positive: 0.00, Negative: 1.00
+
+10. Customer support was extremely helpful and quick to respond.
+   ➝ Positive: 0.99, Negative: 0.01
+
+11. I regret purchasing this item, waste of money.
+   ➝ Positive: 0.00, Negative: 1.00
+
+12. One of the best restaurants in town, highly recommended!
+   ➝ Positive: 1.00, Negative: 0.00
+
+13. The new policy changes are frustrating and unnecessary.
+   ➝ Positive: 0.00, Negative: 1.00
+
+14. I love how comfortable and stylish these shoes are!
+   ➝ Positive: 1.00, Negative: 0.00
+
+15. The concert was an unforgettable experience.
+   ➝ Positive: 0.99, Negative: 0.01
+
+16. The software crashes frequently, making it unusable.
+   ➝ Positive: 0.01, Negative: 0.99
+
+17. Brilliant storytelling, kept me hooked from start to finish.
+   ➝ Positive: 1.00, Negative: 0.00
+
+18. Shipping took forever, and the package arrived damaged.
+   ➝ Positive: 0.58, Negative: 0.42
+
+19. Great workout program, helped me get in shape quickly.
+   ➝ Positive: 0.99, Negative: 0.01
+
+20. The app's interface is confusing and hard to navigate.
+   ➝ Positive: 0.48, Negative: 0.52
+
+
 ## Instalacija biblioteke
 
 Za instalaciju potrebnih biblioteka, koristite sledeću komandu:
@@ -142,3 +206,4 @@ uštedi mnogo vremena kao i resursa.
 ![Screenshot 2025-02-06 144346.png](pictures/Screenshot%202025-02-06%20144346.png)
 ![Screenshot 2025-02-06 144410.png](pictures/Screenshot%202025-02-06%20144410.png)
 ![Screenshot 2025-02-06 144428.png](pictures/Screenshot%202025-02-06%20144428.png)
+
