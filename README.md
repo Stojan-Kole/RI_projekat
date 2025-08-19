@@ -42,7 +42,7 @@ Model je prvo klasično istreniran na
 - **num_query**: Broj instanci u *query* skupu za svaki zadatak. Ovaj skup se koristi za evaluaciju modela na svakom zadatku.
 - **inner_steps**: Broj koraka optimizacije unutar svakog zadatka. To određuje koliko puta će model učiti unutar svakog zadatka.
 - **batch_size**: Broj zadataka koji se obrađuju u jednom koraku treniranja.
-- **meta_epochs**: Broj epoha tokom meta-treninga. Ovo određuje koliko puta će ceo skup zadataka proći kroz obuku.
+- **meta_epochs**: Broj epoha tokom meta-treninga.
 
 ## Datoteke
 
@@ -206,4 +206,5 @@ uštedi mnogo vremena kao i resursa.
 ![Screenshot 2025-02-06 144346.png](pictures/Screenshot%202025-02-06%20144346.png)
 ![Screenshot 2025-02-06 144410.png](pictures/Screenshot%202025-02-06%20144410.png)
 ![Screenshot 2025-02-06 144428.png](pictures/Screenshot%202025-02-06%20144428.png)
+
 
